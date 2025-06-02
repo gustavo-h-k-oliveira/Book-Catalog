@@ -1,0 +1,31 @@
+{
+  "name": "book-catalog",
+  "version": "1.0.0",
+  "description": "Catálogo de livros que permite pesquisar títulos utilizando a API do Google Books. Futuramente, contará com uma interface gráfica para facilitar a busca e visualização dos livros.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavo-h-k-oliveira/Book-Catalog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gustavo-h-k-oliveira/Book-Catalog/issues"
+  },
+  "homepage": "https://github.com/gustavo-h-k-oliveira/Book-Catalog#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
