@@ -87,3 +87,27 @@ let fruits: StringArray = ["Passion Fruit", "Strawberry", "Blueberries"];
 for (let fruit of fruits) {
     console.log(`Fruit: ${fruit}`)
 }
+
+// Fetch API
+fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&timezone=America%2FSao_Paulo")
+    .then(response => {
+        if (!response.ok) throw new Error("Request error.");
+        return response.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+async function getData() {
+    const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&timezone=America%2FSao_Paulo";
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw Error(`Response status: ${response.status}`);
+
+        const json = await response.json();
+        console.log(json);
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
+getData();
