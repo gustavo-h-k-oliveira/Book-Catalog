@@ -27,3 +27,5 @@ Catálogo de livros que permite pesquisar títulos utilizando a API do Google Bo
 * TanStack Query (React Query)
 
 * TanStack Table
+
+* Zustand (gerenciamento de estado e simulação de backend)
