@@ -18,6 +18,8 @@ Catálogo de livros que permite pesquisar títulos utilizando a API do Google Bo
 
 * Node.js
 
+* Vite (build e desenvolvimento frontend)
+
 * API Google Books
 
 * React (frontend)
