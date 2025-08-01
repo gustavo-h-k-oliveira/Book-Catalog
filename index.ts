@@ -80,3 +80,10 @@ function grettingMessage(obj: string | User) {
 
 console.log(grettingMessage("Shatoll"));
 console.log(grettingMessage(user));
+
+type StringArray = Array<string>;
+
+let fruits: StringArray = ["Passion Fruit", "Strawberry", "Blueberries"];
+for (let fruit of fruits) {
+    console.log(`Fruit: ${fruit}`)
+}

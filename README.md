@@ -21,3 +21,7 @@ Catálogo de livros que permite pesquisar títulos utilizando a API do Google Bo
 * API Google Books
 
 * React (frontend)
+
+* TanStack Query (React Query)
+
+* TanStack Table
