@@ -71,15 +71,15 @@ console.log(`Username's length: ${getLength(user.name)}`);
 console.log(`User list's length: ${getLength(users)}`);
 
 // The function returns different values depending on the type it receives
-function grettingMessage(obj: string | User) {
+function greetingMessage(obj: string | User) {
     if (typeof obj === "string") {
         return `Willkommen, Besuchende ${obj}!`;
     }
     return `Willkommen zurück, ${obj.name}`;
 }
 
-console.log(grettingMessage("Shatoll"));
-console.log(grettingMessage(user));
+console.log(greetingMessage("Shatoll"));
+console.log(greetingMessage(user));
 
 type StringArray = Array<string>;
 
@@ -97,6 +97,7 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hou
     .then(data => console.log(data))
     .catch(error => console.error(error));
 
+// Fetch API with a function
 async function getData() {
     const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&timezone=America%2FSao_Paulo";
     try {
